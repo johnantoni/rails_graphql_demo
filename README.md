@@ -2,6 +2,8 @@
 
 ### graphiql queries
 
+* create user
+
     mutation {
       createUser(input: {
         name: "joe",
@@ -15,6 +17,7 @@
       }
     }
 
+* get all users
 
     query{
       users {
@@ -24,7 +27,7 @@
       }
     }
 
-
+* get user with id 1
 
     query{
       user(id: 1) {
