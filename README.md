@@ -2,37 +2,37 @@
 
 ### graphiql queries
 
-mutation {
-  createUser(input: {
-    name: "joe",
-    email: "joe@joe.com"
-  }) {
-    user {
-      id
-      name
-      email
-    } errors
-  }
-}
+    mutation {
+      createUser(input: {
+        name: "joe",
+        email: "joe@joe.com"
+      }) {
+        user {
+          id
+          name
+          email
+        } errors
+      }
+    }
 
 
-query{
-  users {
-    id
-    name
-    email
-  }
-}
+    query{
+      users {
+        id
+        name
+        email
+      }
+    }
 
 
 
-query{
-  user(id: 1) {
-    id
-    name
-    email
-  }
-}
+    query{
+      user(id: 1) {
+        id
+        name
+        email
+      }
+    }
 
 
 ## setup
