@@ -22,3 +22,37 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+mutation {
+  createUser(input: {
+    name: "joe",
+    email: "joe@joe.com"
+  }) {
+    user {
+      id
+      name
+      email
+    } errors
+  }   
+}
+
+
+
+query{
+  users {
+    id
+    name
+    email
+  }
+}
+
+
+
+query{
+  user(id: 1) {
+    id
+    name
+    email
+  }
+}
