@@ -1,28 +1,6 @@
-# README
+# Readme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+### graphiql queries
 
 mutation {
   createUser(input: {
@@ -34,9 +12,8 @@ mutation {
       name
       email
     } errors
-  }   
+  }
 }
-
 
 
 query{
@@ -56,3 +33,20 @@ query{
     email
   }
 }
+
+
+## setup
+
+    bundle install
+    bundle exec rails server
+
+    cd frontend
+    yarn install
+    yarn start
+
+
+## running
+
+* rails graphiql = http://localhost:3000/graphiql
+* apollo frontend = http://localhost:3001/
+
